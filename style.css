@@ -1,0 +1,361 @@
+:root {
+    --main: #323265;
+    --sub: #636290;
+    --point: #326565;
+}
+
+html {
+    word-break: break-word;
+    font-size: 10px;
+}
+
+body {
+    color: #565656;
+    font-family: 'Sawarabi Mincho', sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+}
+
+.portrait {
+    background-image: url("images/profile.png");
+    background-size: cover;
+    background-position: center;
+    padding-top: 56.25%;
+}
+
+.profile {
+    padding: 5%;
+
+}
+
+.profile__header,
+.profile__section {
+    padding-bottom: 5%;
+}
+
+.name {
+    font-size: 30px;
+    line-height: 1.5;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    box-shadow: 0 0 10px 10px white;
+    font-family: 'IM Fell Double Pica', serif;
+}
+
+.name__job {
+    display: inline-block;
+    vertical-align: top;
+    height: 1.5em;
+    overflow: hidden;
+    position: relative;
+    font-family: 'Dancing Script', cursive;
+    font-style: italic;
+}
+
+.name__job::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 -1em;
+    box-shadow: inset 0 0 7px 7px white;
+}
+
+.name__title {
+    margin-bottom: 2rem;
+}
+
+
+@keyframes nameRolling {
+    0% {
+        transform: translateY(0);
+    }
+    33.333% {
+        transform: translateY(-25%);
+    }
+    66.666% {
+        transform: translateY(-50%);
+    }
+    100% {
+        transform: translateY(-75%);
+    }
+
+}
+
+.name__job__list {
+    margin-top: 0;
+    animation: nameRolling 4s infinite;
+    color: var(--main);
+
+}
+
+.name__title {
+    font-size: 1.5em;
+    color: var(--main);
+}
+
+.icons {
+    margin-bottom: 40px;
+}
+
+.profile__section {
+    border-top: var(--main) 3px solid;
+
+}
+
+.profile__section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem 0;
+    color: var(--main);
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 999;
+    margin-top:0.4rem ;
+    box-shadow: 0 0 5px 5px white;
+
+}
+
+.timeline li {
+    border-bottom: var(--main) 1px solid;
+    padding: 2rem 0;
+}
+
+.timeline h3 {
+    font-size: 1.7rem;
+    padding-bottom: 10px;
+    font-weight: bold;
+
+}
+
+.timeline__certificate {
+    color: var(--point);
+}
+
+.timeline__certificate.jp {
+    font-size: 1.3rem;
+    color: var(--sub);
+}
+
+.timeline__certificate.jp:nth-child(2) {
+    font-size: 1.1rem;
+    color: gray;
+    margin: 0;
+    padding: 0;
+
+}
+
+.timeline__year {
+    color: var(--point);
+    float: left;
+    margin-right: 1rem;
+    font-weight: bold;
+    box-sizing: border-box;
+    border-bottom: var(--point) 5px solid;
+    letter-spacing: 0.2rem;
+}
+
+.timeline li:last-child {
+    border-bottom: none;
+}
+
+
+.skills {
+    padding: 2rem 0;
+}
+
+.skills h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem 0;
+    color: var(--main);
+    position: sticky;
+    top: 0;
+    background-color: white;
+    box-shadow: 0 0 10px 10px white;
+}
+
+
+.skills li {
+    background-color: var(--main);
+    color: white;
+    padding: 0.4em 1em;
+    margin: 0.4em 0;
+    border-radius: 0 10px 10px 0;
+    box-sizing: border-box;
+}
+
+.skills li::before {
+    content: attr(data-score);
+    float: right;
+}
+
+@keyframes widthPointing {
+    0% {
+        width: 50%;
+    }
+
+}
+
+.skills li[data-score="90%"] {
+    width: 90%;
+    animation: widthPointing 2s ease-in-out;
+}
+
+.skills li[data-score="80%"] {
+    width: 80%;
+    animation: widthPointing 2s ease-in-out;
+
+}
+
+.skills li[data-score="70%"] {
+    width: 70%;
+    animation: widthPointing 2s ease-in-out;
+}
+
+.skills li[data-score="60%"] {
+    width: 60%;
+    background-color: var(--sub);
+}
+
+.skills li[data-score="50%"] {
+    width: 50%;
+    background-color: var(--sub);
+
+}
+
+.skills li[data-score="40%"] {
+    width: 40%;
+    background-color: var(--sub);
+}
+
+.contact_list {
+    padding: 2em 0;
+}
+
+.contact_list dt {
+    color: var(--point);
+    float: left;
+    margin-right: 0.7em;
+    padding-bottom: 1rem;
+}
+
+.contact_list dd {
+    overflow: hidden;
+    padding-bottom: 1rem;
+}
+
+/* icon style */
+
+.fa-js-square {
+    color: #F8D23C;
+}
+
+.fa-html5 {
+    color: #DE4920;
+}
+
+.fa-css3-alt {
+    color: #2295F1;
+}
+
+.fa-python {
+    color: #35658F;
+}
+
+.fa-react {
+    color: #5DD4F4;
+}
+
+.fa-java {
+    color: #F80F16;
+}
+
+.fa-node-js {
+    color: #60985B;
+}
+
+.project li {
+    margin: 2rem 0;
+}
+
+
+.project__img {
+    height: 200px;
+    width: 100%;
+    background-image: url("images/ToDo_Weather_App.PNG");
+    background-size: cover;
+    background-position: center;
+}
+
+.project__skill i {
+    font-size: 3rem;
+    padding: 1rem;
+    background-color: white;
+    margin: 0 0.2rem;
+    box-shadow: -1px 0px 3px 1px rgba(0, 0, 0, 0.1);
+}
+
+.project__skill i:hover {
+    background-color: var(--main);
+}
+
+.project__skill {
+    height: 50px;
+    width: fit-content;
+    position: relative;
+    top: -70px;
+    left: -20px;
+    margin-bottom: -50px;
+}
+
+.project__detail{
+    width: 100%;
+    background-color: #35658F;
+    box-sizing: border-box;
+    padding: 4%;
+}
+
+.project__btn{
+    box-sizing: border-box;
+    padding: 4%;
+    width: 100%;
+}
+@media screen and (min-width: 768px) {
+
+    .portrait {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 50vw;
+        height: 100vh;
+        padding-top: 0;
+        background-color: red;
+
+    }
+
+    .profile {
+        margin-left: 50vw;
+    }
+
+    .timeline li {
+        width: 48%;
+    }
+
+    .timeline li:nth-child(even) {
+        margin-left: auto;
+        margin-top: -100px;
+
+    }
+
+    .timeline li:last-child {
+        border-bottom: var(--main) 1px solid;
+    }
+}
+
+
+
