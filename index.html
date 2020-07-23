@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="jp">
 <head>
     <meta charset="utf-8">
     <title>About Me</title>
@@ -50,8 +50,8 @@
         <ul class="timeline">
             <li>
                 <h3 class="timeline__certificate">Craftsman Computer Graphics Operation</h3>
-                <h3 class="timeline__certificate jp">Computer Graphics 運用技能士</h3>
-                <h3 class="timeline__certificate jp">韓國産業人力公團資格</h3>
+                <h3 class="timeline__certificate_jp">Computer Graphics 運用技能士</h3>
+                <h3 class="timeline__certificate_agency">韓國産業人力公團資格</h3>
                 <h3 class="timeline__year">2004</h3>
                 <p>
                     DTPデザインプログラム(Photoshop、Illustrator、PageMaker)を利用し印刷物の作成ができる。
@@ -60,8 +60,8 @@
 
             <li>
                 <h3 class="timeline__certificate">Craftsman Web Design</h3>
-                <h3 class="timeline__certificate jp">Web デザイン 技能士</h3>
-                <h3 class="timeline__certificate jp">韓國産業人力公團資格</h3>
+                <h3 class="timeline__certificate_jp">Web デザイン 技能士</h3>
+                <h3 class="timeline__certificate_agency">韓國産業人力公團資格</h3>
                 <h3 class="timeline__year">2005</h3>
                 <p>
                     Webデザインプログラム(Photoshop、Illustrator、Dreamweaver、Flash)を利用し、Webサイトのデザインができる。
@@ -70,8 +70,8 @@
 
             <li>
                 <h3 class="timeline__certificate">PC Master</h3>
-                <h3 class="timeline__certificate jp">PC マスター</h3>
-                <h3 class="timeline__certificate jp">韓国情報評価協会</h3>
+                <h3 class="timeline__certificate_jp">PC マスター</h3>
+                <h3 class="timeline__certificate_agency">韓国情報評価協会</h3>
                 <h3 class="timeline__year">2007</h3>
                 <p>
                     PCのシステム構成とインストール、メンテナンス（故障の修理、システムの最適化、アップグレード）、基本的なネットワークのセットアップと活用に関する業務ができる。
@@ -80,8 +80,8 @@
 
             <li>
                 <h3 class="timeline__certificate">Industrial Engineer Visual Communication Design</h3>
-                <h3 class="timeline__certificate jp">視覚デザイン産業技師</h3>
-                <h3 class="timeline__certificate jp">韓国産業人力公団</h3>
+                <h3 class="timeline__certificate_jp">視覚デザイン産業技師</h3>
+                <h3 class="timeline__certificate_agency">韓国産業人力公団</h3>
                 <h3 class="timeline__year">2009</h3>
                 <p>
                     デザインに必要な理論とデータを分析し、デザインツールとコンピュータシステムを利用し広告デザイン、編集デザインなどの高等な業務ができる。
@@ -89,9 +89,9 @@
             </li>
 
             <li>
-                <h3 class="timeline__certificate">Japanese Language Proficiency Test</h3>
-                <h3 class="timeline__certificate jp">日本語能力試験 N１</h3>
-                <h3 class="timeline__certificate jp">日本国際教育支援協会</h3>
+                <h3 class="timeline__certificate">Japanese Language Proficiency Test N1</h3>
+                <h3 class="timeline__certificate_jp">日本語能力試験 N１</h3>
+                <h3 class="timeline__certificate_agency">日本国際教育支援協会</h3>
                 <h3 class="timeline__year">2016</h3>
                 <p>
                     論理的なやや複雑な文章や抽象度の高い文章などを読んで、文章の構成や内容を理解することができる。
@@ -115,49 +115,112 @@
         </ul>
     </div>
 
-
     <div class="profile__section"><h2>Projects</h2>
         <ul class="project">
-            <li>
-                <div class="project__title">Todo list</div>
-                <div class="project__img"></div>
+            <li class="project__item">
+                <div class="project__img todo"></div>
                 <div class="project__skill"><i class="fab fa-js-square"></i><i class="fab fa-html5"></i><i
                         class="fab fa-css3-alt"></i></div>
-                <div class="project__detail">detail Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium aliquam, asperiores cum, est eveniet inventore maiores necessitatibus nemo quaerat quam reiciendis reprehenderit similique soluta sunt vel voluptatem! Culpa, iure?</div>
-                <div class="project__btn">view / code</div>
+                <div class="project__detail">
+                    <div class="project__detail__title app">Todo list</div>
+                    <span class="project__detail__detail">
+                        緯度・經度獲得し、OpenWeatherMapの天気apiから天気情報をロード、表示するTo Do App。
+                        local storageにTo do Listと完了リストを保存し、リフレシュしてもデーターを残す。
+                    </span>
+                    <div class="project__detail__framework">
+                        <ul>
+                            <li>OpenWeatherMap API</li>
+                            <li>Local storage</li>
+                            <li>Geolocation</li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="project__btn">
+                    <div class="project__btn__btn">view</div>
+                    <div class="project__btn__btn">code</div>
+                    <div class="project__btn__btn">description</div>
+                </div>
             </li>
 
 
-            <li>
-                <div class="project__title">Job scrapper</div>
-                <div class="project__img"></div>
+            <li class="project__item">
+                <div class="project__img scraper"></div>
                 <div class="project__skill"><i class="fab fa-python"></i><i class="fab fa-html5"></i><i
                         class="fab fa-css3-alt"></i>
                 </div>
-                <div class="project__detail">detail Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium aliquam, asperiores cum, est eveniet inventore maiores necessitatibus nemo quaerat quam reiciendis reprehenderit similique soluta sunt vel voluptatem! Culpa, iure?</div>
+                <div class="project__detail">
+                    <div class="project__detail__title app">Job scraper</div>
+                    <span class="project__detail__detail">
+                        RequestsのHTTP通信、BeautifulSoupのParsing機能を利用したJob scraper
+                        検索語を入力するとStackoverflow.com, weworkremotely.com, remoteok.ioの
+                        最新求人情報を獲得する。Pandasを利用したCSVの保存やダウンロードも出来る。
+
+                    </span>
+                    <div class="project__detail__framework">
+                        <ul>
+                            <li>Flask</li>
+                            <li>Requests</li>
+                            <li>BeautifulSoup</li>
+                            <li>Pandas</li>
+                        </ul>
+
+                    </div>
+                </div>
                 <div class="project__btn">view / code</div>
             </li>
 
-            <li>
-                <div class="project__title">Rabbit sitter HANA</div>
-                <div class="project__img"></div>
+            <li class="project__item">
+                <div class="project__img hana"></div>
                 <div class="project__skill">
 
                     <i class="fab fa-react"></i><i class="fab fa-js-square"></i><i class="fab fa-html5"></i><i
                         class="fab fa-css3-alt"></i>
 
                 </div>
-                <div class="project__detail">detail Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium aliquam, asperiores cum, est eveniet inventore maiores necessitatibus nemo quaerat quam reiciendis reprehenderit similique soluta sunt vel voluptatem! Culpa, iure?</div>
+                <div class="project__detail">
+                    <div class="project__detail__title web">Rabbit sitter HANA</div>
+                    <span class="project__detail__detail">
+                        札幌うさぎ向けペットシッターサービスRabbit sitter HANAのOfficial website。
+                        React routerでページラフティング、変わる可能性が高い価格ページの全ElementをComponent化した。
+                        デスクトップ・タブレット・スマホなど全デバイスに対応出来るよう、Media queryを適用した。
+                        Let's EncryptでSSLを適用、Nginx 301 Redirectを設定、http接続をhttpsにredirectionする。
+                    </span>
+                    <div class="project__detail__framework">
+                        <ul>
+                            <li>React router</li>
+                            <li>Styled Components</li>
+                            <li>AWS Lightsail</li>
+                            <li>Nginx</li>
+                        </ul>
+
+                    </div>
+                </div>
                 <div class="project__btn">view / code</div>
             </li>
 
-            <li>
-                <div class="project__title">Amelie</div>
-                <div class="project__img"></div>
+            <li class="project__item">
+                <div class="project__img amelie"></div>
                 <div class="project__skill">
                     <i class="fab fa-java"></i><i class="fab fa-js-square"></i><i class="fab fa-html5"></i><i
                         class="fab fa-css3-alt"></i></div>
-                <div class="project__detail">detail Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium aliquam, asperiores cum, est eveniet inventore maiores necessitatibus nemo quaerat quam reiciendis reprehenderit similique soluta sunt vel voluptatem! Culpa, iure?</div>
+                <div class="project__detail">
+                    <div class="project__detail__title web">Restorante Amelie</div>
+                    <span class="project__detail__detail">
+                     Group work(3人)<br/>
+                        JAVA訓練校の最終ProjectでFront-end、最終訂正、AWSサーバーを担当した。
+                        データーベース連動するメニューシステム、Modal window、ギャラリー、マップ、会員登録、退会、予約システムなどを構築した。
+                    </span>
+                    <div class="project__detail__framework">
+                        <ul>
+                            <li>Jsp</li>
+                            <li>MySql</li>
+                            <li>Google Maps api</li>
+                            <li>AWS EC2-ubunto</li>
+                        </ul>
+                    </div>
+                </div>
+
                 <div class="project__btn">view / code</div>
             </li>
 

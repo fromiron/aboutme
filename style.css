@@ -21,6 +21,7 @@ body {
     background-size: cover;
     background-position: center;
     padding-top: 56.25%;
+    background-color: white;
 }
 
 .profile {
@@ -115,7 +116,7 @@ body {
     top: 0;
     background-color: white;
     z-index: 999;
-    margin-top:0.4rem ;
+    margin-top: 0.4rem;
     box-shadow: 0 0 5px 5px white;
 
 }
@@ -125,28 +126,25 @@ body {
     padding: 2rem 0;
 }
 
-.timeline h3 {
-    font-size: 1.7rem;
-    padding-bottom: 10px;
-    font-weight: bold;
-
-}
 
 .timeline__certificate {
     color: var(--point);
+    font-size: 1.7rem;
+    padding-bottom: 10px;
+    font-weight: bold;
 }
 
-.timeline__certificate.jp {
-    font-size: 1.3rem;
+.timeline__certificate_jp {
+    font-size: 1.5rem;
     color: var(--sub);
+    width: fit-content;
+    border-bottom: solid var(--sub) 1px;
 }
 
-.timeline__certificate.jp:nth-child(2) {
-    font-size: 1.1rem;
+.timeline__certificate_agency {
+    font-size: 1.3rem;
     color: gray;
-    margin: 0;
-    padding: 0;
-
+    margin-bottom: 1rem;
 }
 
 .timeline__year {
@@ -279,18 +277,42 @@ body {
     color: #60985B;
 }
 
-.project li {
+
+.project__item {
     margin: 2rem 0;
+    box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.08), -2px -2px 2px 1px rgba(0, 0, 0, 0.05);
 }
 
+.project__item:hover {
+    position: relative;
+    top: -2px;
+    box-shadow: 0 3px 5px 5px rgba(0, 0, 0, 0.1), 0 0 2px 1px rgba(0, 0, 0, 0.1);
+
+}
 
 .project__img {
     height: 200px;
     width: 100%;
-    background-image: url("images/ToDo_Weather_App.PNG");
     background-size: cover;
-    background-position: center;
+    background-position: top;
 }
+
+.project__img.todo {
+    background-image: url("images/todo.PNG");
+}
+
+.project__img.scraper {
+    background-image: url("images/jobscraper.PNG");
+}
+
+.project__img.hana {
+    background-image: url("images/hana.PNG");
+}
+
+.project__img.amelie {
+    background-image: url("images/amelie.PNG");
+}
+
 
 .project__skill i {
     font-size: 3rem;
@@ -313,18 +335,78 @@ body {
     margin-bottom: -50px;
 }
 
-.project__detail{
+.project__detail {
     width: 100%;
-    background-color: #35658F;
+    background-color: #444;
+    color: white;
     box-sizing: border-box;
     padding: 4%;
 }
 
-.project__btn{
-    box-sizing: border-box;
-    padding: 4%;
-    width: 100%;
+.project__detail__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+
 }
+
+.project__detail__title.app::after {
+    content: "APP";
+    padding: 4px;
+    background-color: var(--sub);
+    display: inline-block;
+    height: 100%;
+    z-index: 99;
+    margin-left: 1rem;
+    box-sizing: border-box;
+}
+
+.project__detail__title.web::after {
+    content: "WEB";
+    padding: 4px;
+    background-color: var(--main);
+    display: inline-block;
+    height: 100%;
+    z-index: 99;
+    margin-left: 1rem;
+    box-sizing: border-box;
+}
+
+.project__detail__detail {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.project__detail__framework {
+    border-top: 1px solid #999;
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+}
+
+.project__detail__framework ul li {
+    margin: 0;
+    padding: 0;
+}
+
+.project__btn {
+    box-sizing: border-box;
+    padding-left: 4%;
+    width: 100%;
+    display: flex;
+}
+
+.project__btn__btn {
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.project__btn__btn:hover {
+    background-color: var(--point);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
 @media screen and (min-width: 768px) {
 
     .portrait {
